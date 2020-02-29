@@ -1,5 +1,6 @@
 
 # https://www.geeksforgeeks.org/graph-plotting-python-set-2/
+
 import matplotlib.pyplot as plt
 
 MaxRange = 100000
