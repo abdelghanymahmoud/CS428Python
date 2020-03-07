@@ -19,24 +19,17 @@ def path():
         x.append(I)
         y.append(J)
 
-path()
-# plotting points as a scatter plot
-plt.scatter(x, y, label="stars", color="green", marker="*", s=5)
+ave = 0
+for i in range(100):
+    x = []
+    y = []
+    path()
+    # plotting points as a scatter plot
+    plt.scatter(x, y, label="stars", color="blue", marker="*", s=5)
+    ave = ave + abs(y[MaxX - 1])
+    print(i+1, "distance=",abs(y[MaxX - 1]))
 
-x = []
-y = []
-
-path()
-# plotting points as a scatter plot
-plt.scatter(x, y, label="stars", color="red", marker="*", s=5)
-
-x = []
-y = []
-
-path()
-# plotting points as a scatter plot
-plt.scatter(x, y, label="stars", color="blue", marker="*", s=5)
-
+print("ave=", ave/100)
 # x-axis label
 plt.xlabel('x - axis')
 # frequency label
