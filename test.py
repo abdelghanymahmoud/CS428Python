@@ -1,6 +1,6 @@
 MaxRange = 100000
 prime = list(range(0, MaxRange))
-
+# jhfjsdh
 for i in range(2, MaxRange):
     prime[i] = True
 
